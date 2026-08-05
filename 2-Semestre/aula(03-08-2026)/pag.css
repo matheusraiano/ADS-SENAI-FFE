@@ -1,0 +1,173 @@
+
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* CABEÇALHO */
+.cabecalho {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* CONTAINER PRINCIPAL (PROBLEMA: Layout estático e não flexível) - NAO ENTENDI */
+.container-principal {
+    display: flex;
+    /* Falta flex-wrap ou flex-direction para o celular */
+}
+
+/* MENU LATERAL (PROBLEMA: Tamanho fixo que esmaga o conteúdo no mobile) - NAO ENTENDI, MAS FEITO */
+.menu-lateral {
+    width: 250px; 
+    background-color: #f4f4f4;
+    height: 100vh;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+.menu-lateral ul {
+    list-style: none;
+}
+
+.menu-lateral ul li {
+    margin-bottom: 15px;
+}
+
+.menu-lateral ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: all ease 0.3s;
+}
+
+.menu-lateral ul li a:hover {
+    color: red;
+}
+
+/* ÁREA DE DADOS */
+.area-dados {
+    padding: 20px;
+    /* PROBLEMA: Largura fixa que causa rolagem horizontal no celular - FEITO */
+    width: 1000px; 
+}
+
+/* CARDS (PROBLEMA: Tamanho fixo e display em linha que não quebra) - FEITO */
+.linha-cards {
+    display: flex;
+    margin-top: 20px;
+}
+
+.card {
+    width: 300px;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.temperatura {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.alerta {
+    background-color: #d9534f; 
+}
+.normal {
+    background-color: #5cb85c;
+}
+
+strong {
+    color: white;
+    background: red;
+    padding: 2px;
+}
+
+.sessao-historico {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.sessao-historico h2 {
+    margin-bottom: 15px;
+}
+
+/* Estilo básico da tabela */
+.tabela-alarmes {
+    width: 100%;
+    border-collapse: collapse;
+    /* FORÇANDO O ERRO: Garantimos que a tabela seja bem larga para "quebrar" a tela do celular */
+    min-width: 700px; 
+}
+
+.tabela-alarmes th, .tabela-alarmes td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+}
+
+.tabela-alarmes th {
+    background-color: #003366;
+    color: white;
+}
+
+.tabela-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+    .linha-cards {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .area-dados {
+        max-width: 100%; 
+    }
+    .menu-lateral {
+        width: 100%;
+        height: auto;
+    }
+    .container-principal {
+        flex-direction: column;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    .area-dados {
+        background: rgb(39, 37, 37);
+        color: white;
+    }
+    body {
+        background: rgb(39, 37, 37);
+    }
+    .menu-lateral {
+        background: rgb(71, 69, 69);
+    }
+    .menu-lateral ul li a {
+        color: white;
+    }
+    .sessao-historico {
+        background: rgb(39, 37, 37);
+    }
+}
+@media print {
+    * {
+        color-scheme: light;
+    }
+}

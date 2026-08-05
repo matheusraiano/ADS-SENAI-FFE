@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Industrial - Caldeiras</title>
+    <link rel="stylesheet" href="pag.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <h1><strong>SENAI</strong> - Controle de Produção</h1>
+        <p>Usuário: Operador Turno A</p>
+    </header>
+
+    <div class="container-principal">
+        
+        <!-- Menu Lateral -->
+        <nav class="menu-lateral">
+            <ul>
+                <li><a href="#">Visão Geral</a></li>
+                <li><a href="#">Caldeiras</a></li>
+                <li><a href="#">Sensores</a></li>
+                <li><a href="#">Relatórios</a></li>
+            </ul>
+        </nav>
+
+        <!-- Área de Dados -->
+        <main class="area-dados">
+            <h2>Status em Tempo Real</h2>
+            
+            <div class="linha-cards">
+                <div class="card alerta">
+                    <h3>Caldeira 01</h3>
+                    <p class="temperatura">180°C</p>
+                    <p>Status: Pressão Alta</p>
+                </div>
+
+                <div class="card normal">
+                    <h3>Caldeira 02</h3>
+                    <p class="temperatura">90°C</p>
+                    <p>Status: Normal</p>
+                </div>
+
+                <div class="card normal">
+                    <h3>Caldeira 03</h3>
+                    <p class="temperatura">88°C</p>
+                    <p>Status: Normal</p>
+                </div>
+            </div>
+            <div class="sessao-historico">
+                <h2>Histórico de Alarmes</h2>
+                
+                <!-- O SEGREDO ESTÁ AQUI: Esta div "envelopa" a tabela -->
+                <div class="tabela-container">
+                    <table class="tabela-alarmes">
+                        <thead>
+                            <tr>
+                                <th>Data</th>
+                                <th>Hora</th>
+                                <th>Máquina / Equipamento</th>
+                                <th>Tipo de Alerta</th>
+                                <th>Técnico Responsável</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>03/08/2026</td>
+                                <td>09:15</td>
+                                <td>Caldeira Principal 01</td>
+                                <td>Pressão Alta (180°C)</td>
+                                <td>João Silva</td>
+                            </tr>
+                            <tr>
+                                <td>03/08/2026</td>
+                                <td>08:30</td>
+                                <td>Esteira Transportadora C</td>
+                                <td>Superaquecimento do Motor</td>
+                                <td>Maria Souza</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+</body>
+</html>
