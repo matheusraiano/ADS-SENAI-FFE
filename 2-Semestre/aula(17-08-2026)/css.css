@@ -1,0 +1,174 @@
+/* =========================================================
+   SISTEMA DE MONITORAMENTO - CSS "cru" (antes do Bootstrap)
+   Estilos simples, escritos na mão, sem framework.
+   Na Aula 3 esta página será refeita com componentes
+   do Bootstrap - e este arquivo não será mais necessário.
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f5f9;
+    color: #1f2937;
+    line-height: 1.5;
+}
+
+/* ---------- Cabeçalho ---------- */
+.cabecalho {
+    background: #003366;
+    color: #ffffff;
+    padding: 16px 20px;
+}
+
+.cabecalho h1 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.menu-topo ul {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+}
+
+.menu-topo a {
+    color: #bfdbfe;
+    text-decoration: none;
+}
+
+.menu-topo a:hover {
+    color: #ffffff;
+}
+
+.usuario {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #9db8d4;
+}
+
+/* ---------- Conteúdo ---------- */
+.container-principal {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 28px;
+}
+
+h2 {
+    font-size: 18px;
+    color: #003366;
+    margin-bottom: 12px;
+}
+
+/* ---------- Aviso ---------- */
+.aviso {
+    background: #fff7ed;
+    border-left: 5px solid #d97706;
+    padding: 12px 16px;
+    margin-bottom: 24px;
+    border-radius: 4px;
+}
+
+/* ---------- Cards de máquina (1 por linha) ---------- */
+.card-maquina {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-left: 6px solid #cccccc;
+    border-radius: 6px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+}
+
+.card-maquina h3 {
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.card-maquina .indicador {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+/* Variações de status */
+.card-maquina.normal { border-left-color: #16a34a;}
+.card-maquina.alerta { border-left-color: #dc2626;}
+.card-maquina.manutencao { border-left-color: #d97706;}
+.card-maquina.parada { border-left-color: #dc2626;}
+
+/* ---------- Tabela ---------- */
+.tabela-indicadores {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+}
+
+.tabela-indicadores th,
+.tabela-indicadores td {
+    border: 1px solid #cbd5e1;
+    padding: 8px 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.tabela-indicadores th {
+    background: #003366;
+    color: #ffffff;
+}
+
+/* ---------- Formulário ---------- */
+.form-filtro {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    padding: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+
+.form-filtro label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-filtro select {
+    padding: 8px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-filtro button {
+    padding: 8px 18px;
+    border: none;
+    border-radius: 4px;
+    background: #003366;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.form-filtro button[type="reset"] {
+    background: #e2e8f0;
+    color: #1f2937;
+}
+
+/* ---------- Rodapé ---------- */
+.rodape {
+    text-align: center;
+    font-size: 13px;
+    color: #64748b;
+    border-top: 1px solid #cbd5e1;
+    padding-top: 12px;
+}

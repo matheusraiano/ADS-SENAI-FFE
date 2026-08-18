@@ -1,0 +1,1140 @@
+Aula(17-08-2026):
+    bootstrap class:
+        container-fluid:
+            cria um bloco de largura total que ocupa 100% da tela em qualquer tamanho de dispositivo
+
+            Exemplo:
+            <div class="container-fluid">
+                Conteúdo da página
+            </div>
+
+
+        btn:
+            transforma um elemento, geralmente um <button>, em um botão com o estilo padrão do Bootstrap
+
+            Exemplo:
+            <button class="btn">
+                Botão
+            </button>
+
+
+        btn-primary:
+            cria um botão azul usado normalmente para a ação principal, como "Filtrar"
+
+            Exemplo:
+            <button type="submit" class="btn btn-primary">
+                Filtrar
+            </button>
+
+
+        btn-success:
+            cria um botão verde usado para representar sucesso ou uma ação positiva
+
+            Exemplo:
+            <button class="btn btn-success">
+                Confirmar
+            </button>
+
+
+        btn-warning:
+            cria um botão amarelo/âmbar usado para representar atenção
+
+            Exemplo:
+            <button class="btn btn-warning">
+                Atenção
+            </button>
+
+
+        btn-danger:
+            cria um botão vermelho usado para representar perigo, exclusão ou uma ação crítica
+
+            Exemplo:
+            <button class="btn btn-danger">
+                Excluir
+            </button>
+
+
+        btn-outline-secondary:
+            cria um botão com contorno cinza usado normalmente para ações secundárias, como "Limpar"
+
+            Exemplo:
+            <button type="reset" class="btn btn-outline-secondary">
+                Limpar
+            </button>
+
+
+        btn-light:
+            cria um botão com fundo claro, podendo ser usado sobre cards ou elementos coloridos
+
+            Exemplo:
+            <button class="btn btn-light">
+                Detalhes
+            </button>
+
+
+        badge:
+            cria um pequeno selo usado para mostrar informações curtas, principalmente status
+
+            Exemplo:
+            <span class="badge text-bg-success">
+                Ativa
+            </span>
+
+
+        text-bg-success:
+            cria um elemento com fundo verde e texto adequado para indicar que algo está funcionando ou ativo
+
+            Exemplo:
+            <span class="badge text-bg-success">
+                Ativa
+            </span>
+
+
+        text-bg-warning:
+            cria um elemento com fundo amarelo/âmbar usado para indicar atenção ou manutenção
+
+            Exemplo:
+            <span class="badge text-bg-warning">
+                Em manutenção
+            </span>
+
+
+        text-bg-danger:
+            cria um elemento com fundo vermelho usado para indicar problemas ou algo parado
+
+            Exemplo:
+            <span class="badge text-bg-danger">
+                Parada
+            </span>
+
+
+        bg-light:
+            aplica uma cor de fundo clara ao elemento
+
+            Exemplo:
+            <div class="bg-light">
+                Conteúdo
+            </div>
+
+
+        text-dark:
+            deixa o texto com uma cor escura
+
+            Exemplo:
+            <span class="bg-light text-dark">
+                Ativa
+            </span>
+
+
+        alert:
+            cria uma caixa de aviso visual para informar o usuário sobre alguma situação
+
+            Exemplo:
+            <div class="alert">
+                Aviso
+            </div>
+
+
+        alert-success:
+            cria um alerta verde para indicar uma situação de sucesso ou positiva
+
+            Exemplo:
+            <div class="alert alert-success">
+                Operação realizada com sucesso!
+            </div>
+
+
+        alert-warning:
+            cria um alerta amarelo/âmbar para chamar atenção para uma situação
+
+            Exemplo:
+            <div class="alert alert-warning">
+                Atenção: máquina em manutenção.
+            </div>
+
+
+        alert-danger:
+            cria um alerta vermelho para indicar um problema ou situação perigosa
+
+            Exemplo:
+            <div class="alert alert-danger">
+                Erro: máquina parada.
+            </div>
+
+
+        alert-info:
+            cria um alerta azul para apresentar informações
+
+            Exemplo:
+            <div class="alert alert-info">
+                Sistema atualizado.
+            </div>
+
+
+        alert-dismissible:
+            permite que o alerta seja fechado pelo usuário
+
+            Exemplo:
+            <div class="alert alert-warning alert-dismissible">
+                Atenção!
+            </div>
+
+
+        fade:
+            adiciona um efeito de transição ao elemento quando ele aparece ou desaparece
+
+            Exemplo:
+            <div class="alert alert-warning fade">
+                Atenção!
+            </div>
+
+
+        show:
+            indica que o elemento deve estar visível, sendo usado junto com componentes que possuem transição
+
+            Exemplo:
+            <div class="alert alert-warning fade show">
+                Atenção!
+            </div>
+
+
+        role="alert":
+            informa aos recursos de acessibilidade que aquele elemento representa um alerta
+
+            Exemplo:
+            <div class="alert alert-warning" role="alert">
+                Atenção!
+            </div>
+
+
+        btn-close:
+            cria o botão de fechar usado em componentes como alertas e modais
+
+            Exemplo:
+            <button type="button" class="btn-close">
+            </button>
+
+
+        navbar:
+            cria uma barra de navegação para organizar o menu da página
+
+            Exemplo:
+            <nav class="navbar">
+                Menu
+            </nav>
+
+
+        navbar-expand-lg:
+            faz com que a navbar fique expandida em telas grandes e seja recolhida em telas menores
+
+            Exemplo:
+            <nav class="navbar navbar-expand-lg">
+                Menu
+            </nav>
+
+
+        navbar-dark:
+            configura a navbar para utilizar cores adequadas a fundos escuros
+
+            Exemplo:
+            <nav class="navbar navbar-dark">
+                Menu
+            </nav>
+
+
+        navbar-brand:
+            identifica o nome ou marca principal dentro da navbar, como "SENAI"
+
+            Exemplo:
+            <span class="navbar-brand">
+                SENAI
+            </span>
+
+
+        fw-bold:
+            deixa o texto em negrito
+
+            Exemplo:
+            <p class="fw-bold">
+                Máquina ativa
+            </p>
+
+
+        navbar-toggler:
+            cria o botão usado para abrir e fechar o menu da navbar em telas pequenas
+
+            Exemplo:
+            <button class="navbar-toggler" type="button">
+                Menu
+            </button>
+
+
+        navbar-toggler-icon:
+            mostra o ícone de "hambúrguer" dentro do botão da navbar
+
+            Exemplo:
+            <span class="navbar-toggler-icon"></span>
+
+
+        collapse:
+            permite esconder ou mostrar um conteúdo, sendo usado para criar o menu recolhível
+
+            Exemplo:
+            <div class="collapse">
+                Menu
+            </div>
+
+
+        navbar-collapse:
+            define a área da navbar que será recolhida ou expandida
+
+            Exemplo:
+            <div class="collapse navbar-collapse">
+                Menu
+            </div>
+
+
+        data-bs-toggle="collapse":
+            informa ao Bootstrap que o elemento deve controlar um componente do tipo collapse
+
+            Exemplo:
+            <button data-bs-toggle="collapse">
+                Abrir menu
+            </button>
+
+
+        data-bs-target="#menu":
+            informa qual elemento será aberto ou fechado pelo botão, usando o id do elemento como referência
+
+            Exemplo:
+            <button data-bs-toggle="collapse"
+                    data-bs-target="#menu">
+                Menu
+            </button>
+
+
+        id="menu":
+            cria um identificador único para que outros elementos possam localizar e controlar aquele elemento
+
+            Exemplo:
+            <div id="menu">
+                Conteúdo
+            </div>
+
+
+        navbar-nav:
+            organiza os itens de navegação dentro da navbar
+
+            Exemplo:
+            <ul class="navbar-nav">
+                ...
+            </ul>
+
+
+        nav-item:
+            representa um item individual do menu de navegação
+
+            Exemplo:
+            <li class="nav-item">
+                ...
+            </li>
+
+
+        nav-link:
+            cria um link dentro da área de navegação
+
+            Exemplo:
+            <a class="nav-link" href="#">
+                Dashboard
+            </a>
+
+
+        active:
+            indica que aquele item do menu é o item atualmente selecionado ou ativo
+
+            Exemplo:
+            <a class="nav-link active" href="#">
+                Dashboard
+            </a>
+
+
+        row:
+            cria uma linha no sistema de grid do Bootstrap para organizar colunas
+
+            Exemplo:
+            <div class="row">
+                ...
+            </div>
+
+
+        g-3:
+            adiciona espaçamento entre os elementos de uma linha ou grid
+
+            Exemplo:
+            <div class="row g-3">
+                ...
+            </div>
+
+
+        col-md-6:
+            cria uma coluna que ocupa metade da largura disponível a partir do tamanho médio de tela
+
+            Exemplo:
+            <div class="col-md-6">
+                Conteúdo
+            </div>
+
+
+        col-xl-3:
+            cria uma coluna que ocupa 3 das 12 partes da grade, ou seja, 25%, a partir do tamanho extra grande
+
+            Exemplo:
+            <div class="col-xl-3">
+                Conteúdo
+            </div>
+
+
+        card:
+            cria um bloco visual para agrupar informações relacionadas
+
+            Exemplo:
+            <div class="card">
+                <div class="card-body">
+                    Conteúdo do card
+                </div>
+            </div>
+
+
+        h-100:
+            faz o elemento ocupar 100% da altura disponível, ajudando a deixar cards com alturas iguais
+
+            Exemplo:
+            <div class="card h-100">
+                Conteúdo
+            </div>
+
+
+        card-body:
+            cria a área interna principal onde ficam os conteúdos do card
+
+            Exemplo:
+            <div class="card-body">
+                Conteúdo
+            </div>
+
+
+        text-center:
+            centraliza horizontalmente o texto dentro do elemento
+
+            Exemplo:
+            <div class="text-center">
+                Texto centralizado
+            </div>
+
+
+        h6:
+            define um título com tamanho visual semelhante ao nível de título h6
+
+            Exemplo:
+            <h3 class="h6">
+                Prensa P-01
+            </h3>
+
+
+        display-6:
+            aumenta bastante o tamanho do texto, sendo útil para destacar números ou indicadores
+
+            Exemplo:
+            <p class="display-6">
+                92%
+            </p>
+
+
+        mb-1:
+            adiciona uma pequena margem na parte inferior do elemento
+
+            Exemplo:
+            <p class="mb-1">
+                Texto
+            </p>
+
+
+        mb-2:
+            adiciona uma margem na parte inferior do elemento
+
+            Exemplo:
+            <p class="mb-2">
+                Texto
+            </p>
+
+
+        mb-3:
+            adiciona uma margem maior na parte inferior do elemento
+
+            Exemplo:
+            <h2 class="mb-3">
+                Monitoramento
+            </h2>
+
+
+        small:
+            deixa o texto visualmente menor, sendo útil para informações complementares
+
+            Exemplo:
+            <p class="small">
+                OEE
+            </p>
+
+
+        table:
+            identifica uma tabela e permite aplicar os estilos de tabela do Bootstrap
+
+            Exemplo:
+            <table class="table">
+                ...
+            </table>
+
+
+        table-responsive:
+            envolve a tabela para permitir rolagem horizontal quando ela não couber em telas pequenas
+
+            Exemplo:
+            <div class="table-responsive">
+                <table class="table">
+                    ...
+                </table>
+            </div>
+
+
+        table-striped:
+            adiciona cores alternadas nas linhas da tabela, facilitando a leitura
+
+            Exemplo:
+            <table class="table table-striped">
+                ...
+            </table>
+
+
+        table-hover:
+            destaca visualmente a linha da tabela quando o mouse passa sobre ela
+
+            Exemplo:
+            <table class="table table-hover">
+                ...
+            </table>
+
+
+        align-middle:
+            alinha verticalmente o conteúdo das células no meio
+
+            Exemplo:
+            <table class="table align-middle">
+                ...
+            </table>
+
+
+        table-dark:
+            aplica um estilo escuro ao cabeçalho ou à área indicada da tabela
+
+            Exemplo:
+            <thead class="table-dark">
+                ...
+            </thead>
+
+
+        thead:
+            representa o cabeçalho da tabela
+
+            Exemplo:
+            <thead>
+                <tr>
+                    <th>Máquina</th>
+                </tr>
+            </thead>
+
+
+        tbody:
+            representa o corpo da tabela, onde ficam os dados
+
+            Exemplo:
+            <tbody>
+                <tr>
+                    <td>Prensa P-01</td>
+                </tr>
+            </tbody>
+
+
+        form:
+            identifica uma área destinada ao preenchimento e envio de informações pelo usuário
+
+            Exemplo:
+            <form>
+                ...
+            </form>
+
+
+        form-label:
+            aplica o estilo Bootstrap ao texto que identifica um campo do formulário
+
+            Exemplo:
+            <label for="planta" class="form-label">
+                Planta
+            </label>
+
+
+        form-select:
+            estiliza elementos <select> como caixas de seleção do Bootstrap
+
+            Exemplo:
+            <select class="form-select">
+                <option>São Paulo</option>
+                <option>Santo André</option>
+            </select>
+
+
+        align-items-end:
+            alinha os elementos do formulário pela parte inferior
+
+            Exemplo:
+            <form class="row g-3 align-items-end">
+                ...
+            </form>
+
+
+        action="#":
+            define o destino do envio do formulário; nesse exercício, o formulário permanece na própria página
+
+            Exemplo:
+            <form action="#">
+                ...
+            </form>
+
+
+        type="submit":
+            define um botão como responsável por enviar o formulário
+
+            Exemplo:
+            <button type="submit">
+                Filtrar
+            </button>
+
+
+        type="reset":
+            define um botão que limpa/restaura os campos do formulário
+
+            Exemplo:
+            <button type="reset">
+                Limpar
+            </button>
+
+
+        modal:
+            cria uma janela sobreposta usada para apresentar informações ou detalhes sem sair da página
+
+            Exemplo:
+            <div class="modal">
+                ...
+            </div>
+
+
+        modal-dialog:
+            define a estrutura e o posicionamento da caixa do modal
+
+            Exemplo:
+            <div class="modal-dialog">
+                ...
+            </div>
+
+
+        modal-content:
+            representa o conteúdo visual principal dentro do modal
+
+            Exemplo:
+            <div class="modal-content">
+                ...
+            </div>
+
+
+        modal-header:
+            cria a área superior do modal, normalmente usada para colocar o título e o botão de fechar
+
+            Exemplo:
+            <div class="modal-header">
+                ...
+            </div>
+
+
+        modal-title:
+            identifica o título apresentado no cabeçalho do modal
+
+            Exemplo:
+            <h1 class="modal-title">
+                Detalhes
+            </h1>
+
+
+        modal-body:
+            cria a área principal onde ficam as informações do modal
+
+            Exemplo:
+            <div class="modal-body">
+                Informações da máquina
+            </div>
+
+
+        modal-footer:
+            cria a área inferior do modal, normalmente usada para colocar botões
+
+            Exemplo:
+            <div class="modal-footer">
+                ...
+            </div>
+
+
+        data-bs-toggle="modal":
+            informa ao Bootstrap que o elemento deve abrir um modal
+
+            Exemplo:
+            <button data-bs-toggle="modal">
+                Ver detalhes
+            </button>
+
+
+        data-bs-target="#modalDetalhes":
+            informa qual modal deve ser aberto pelo botão
+
+            Exemplo:
+            <button data-bs-toggle="modal"
+                    data-bs-target="#modalDetalhes">
+                Ver detalhes
+            </button>
+
+
+        data-bs-dismiss="modal":
+            informa ao Bootstrap que o elemento deve fechar o modal
+
+            Exemplo:
+            <button data-bs-dismiss="modal">
+                Fechar
+            </button>
+
+
+        id="modalDetalhes":
+            cria o identificador usado pelo botão para localizar e abrir o modal correspondente
+
+            Exemplo:
+            <div class="modal" id="modalDetalhes">
+                ...
+            </div>
+
+
+        tabindex="-1":
+            configura a possibilidade de foco do elemento, sendo utilizado na estrutura do modal
+
+            Exemplo:
+            <div class="modal" tabindex="-1">
+                ...
+            </div>
+
+
+        p-3:
+            adiciona espaçamento interno em todos os lados do elemento
+
+            Exemplo:
+            <div class="bg-light p-3">
+                Conteúdo
+            </div>
+
+
+        py-4:
+            adiciona espaçamento interno vertical, ou seja, em cima e embaixo
+
+            Exemplo:
+            <div class="py-4">
+                Conteúdo
+            </div>
+
+
+        d-flex:
+            transforma o elemento em um container flexível usando Flexbox
+
+            Exemplo:
+            <div class="d-flex">
+                ...
+            </div>
+
+
+        justify-content-between:
+            distribui os elementos deixando o maior espaço possível entre eles
+
+            Exemplo:
+            <div class="d-flex justify-content-between">
+                <span>Máquina:</span>
+                <strong>P-01</strong>
+            </div>
+
+
+        rounded:
+            adiciona bordas arredondadas ao elemento
+
+            Exemplo:
+            <div class="bg-light rounded">
+                Conteúdo
+            </div>
+
+
+        text-white-50:
+            deixa o texto branco com aparência parcialmente transparente
+
+            Exemplo:
+            <p class="text-white-50">
+                Última atualização
+            </p>
+
+
+        style="background:#003366":
+            aplica diretamente uma cor de fundo azul-escura ao elemento usando CSS
+
+            Exemplo:
+            <nav style="background:#003366">
+                SENAI
+            </nav>
+
+
+        href="#":
+            define o destino de um link; usando "#", o link não aponta para uma página específica
+
+            Exemplo:
+            <a href="#">
+                Dashboard
+            </a>
+
+
+        for="planta":
+            relaciona o <label> ao campo que possui o id "planta"
+
+            Exemplo:
+            <label for="planta">
+                Planta
+            </label>
+
+            <select id="planta">
+                ...
+            </select>
+
+
+        aria-label="Fechar":
+            fornece uma descrição para recursos de acessibilidade, identificando o botão como responsável por fechar o elemento
+
+            Exemplo:
+            <button class="btn-close"
+                    aria-label="Fechar">
+            </button>
+
+
+        id:
+            cria um identificador único para um elemento HTML
+
+            Exemplo:
+            <div id="menu">
+                Conteúdo
+            </div>
+
+
+        data-bs-*:
+            conjunto de atributos usados pelo Bootstrap 5 para configurar e controlar componentes JavaScript
+
+            Exemplos:
+            data-bs-toggle="modal"
+            data-bs-target="#modalDetalhes"
+            data-bs-dismiss="modal"
+            data-bs-toggle="collapse"
+
+
+    Bootstrap CDN:
+        permite utilizar o Bootstrap diretamente no projeto através de arquivos hospedados em uma CDN, sem precisar baixar o framework
+
+        Exemplo no <head>:
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+
+        Exemplo antes do </body>:
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    Resumo:
+        btn:
+            botões
+
+        badge:
+            status
+
+        alert:
+            avisos
+
+        navbar:
+            menu
+
+        card:
+            blocos de informação
+
+        table:
+            tabelas
+
+        form:
+            campos e filtros
+
+        modal:
+            janela de detalhes
+
+        row + col-*:
+            organização em linhas e colunas
+
+        container-fluid:
+            área que ocupa toda a largura
+
+        d-flex + justify-content-between:
+            organização dos elementos em linha com espaço entre eles
+
+        p-* / py-*:
+            espaçamento interno
+
+        mb-*:
+            margem inferior
+
+        fw-bold:
+            negrito
+
+        display-6:
+            texto/número grande
+
+        rounded:
+            bordas arredondadas
+
+
+    Exemplos completos:
+
+        CARD:
+
+        <div class="card text-bg-success h-100">
+
+            <div class="card-body text-center">
+
+                <h3 class="h6">
+                    Prensa P-01
+                </h3>
+
+                <p class="display-6 fw-bold mb-1">
+                    92%
+                </p>
+
+                <p class="small mb-2">
+                    OEE
+                </p>
+
+                <span class="badge bg-light text-dark">
+                    Ativa
+                </span>
+
+            </div>
+
+        </div>
+
+
+        TABELA:
+
+        <div class="table-responsive">
+
+            <table class="table table-striped table-hover align-middle">
+
+                <thead class="table-dark">
+
+                    <tr>
+                        <th>Máquina</th>
+                        <th>Status</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            Prensa P-01
+                        </td>
+
+                        <td>
+                            <span class="badge text-bg-success">
+                                Ativa
+                            </span>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        FORMULÁRIO:
+
+        <form class="row g-3 align-items-end">
+
+            <div class="col-md-4">
+
+                <label for="planta" class="form-label">
+                    Planta
+                </label>
+
+                <select id="planta" class="form-select">
+
+                    <option>Selecione</option>
+                    <option>São Paulo</option>
+                    <option>Santo André</option>
+
+                </select>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <label for="status" class="form-label">
+                    Status
+                </label>
+
+                <select id="status" class="form-select">
+
+                    <option>Todos</option>
+                    <option>Ativa</option>
+                    <option>Em manutenção</option>
+                    <option>Parada</option>
+
+                </select>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <button type="submit" class="btn btn-primary">
+                    Filtrar
+                </button>
+
+                <button type="reset"
+                        class="btn btn-outline-secondary">
+                    Limpar
+                </button>
+
+            </div>
+
+        </form>
+
+
+        ALERTA:
+
+        <div class="alert alert-warning alert-dismissible fade show"
+            role="alert">
+
+            <strong>Atenção:</strong>
+            2 máquinas em manutenção.
+
+            <button type="button"
+                    class="btn-close"
+                    data-bs-dismiss="alert"
+                    aria-label="Fechar">
+            </button>
+
+        </div>
+
+
+        NAVBAR:
+
+        <nav class="navbar navbar-expand-lg navbar-dark"
+            style="background:#003366">
+
+            <div class="container-fluid">
+
+                <span class="navbar-brand fw-bold">
+                    SENAI
+                </span>
+
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#menu">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+
+                    <ul class="navbar-nav me-auto">
+
+                        <li class="nav-item">
+
+                            <a class="nav-link active" href="#">
+                                Dashboard
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+        MODAL:
+
+        <button class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#modalDetalhes">
+            Ver detalhes
+        </button>
+
+
+        <div class="modal fade"
+            id="modalDetalhes"
+            tabindex="-1">
+
+            <div class="modal-dialog">
+
+                <div class="modal-content">
+
+                    <div class="modal-header">
+
+                        <h1 class="modal-title fs-5">
+                            Detalhes da máquina
+                        </h1>
+
+                        <button type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal">
+                        </button>
+
+                    </div>
+
+                    <div class="modal-body">
+                        Prensa P-01 está funcionando normalmente.
+                    </div>
+
+                    <div class="modal-footer">
+
+                        <button class="btn btn-secondary"
+                                data-bs-dismiss="modal">
+                            Fechar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>

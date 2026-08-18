@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Monitoramento - Bootstrap</title>
+
+    <!-- INSTALAÇÃO VIA CDN (a mesma da Aula 2) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <!-- =========================================================
+         NAVBAR: substitui o <header class="cabecalho">
+         navbar-expand-lg = menu vira "hambúrguer" no celular
+         ========================================================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #003366;">
+        <div class="container-fluid">
+
+            <span class="navbar-brand fw-bold">SENAI - Sistema de Monitoramento</span>
+
+            <!-- Botão "hambúrguer" (aparece só no celular) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Links do menu (colapsáveis em telas pequenas) -->
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Máquinas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Consultas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Relatórios</a></li>
+                </ul>
+                <span class="navbar-text text-white-50 d-none d-md-block">Usuário: Operador Turno A</span>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container-fluid py-4">
+
+        <!-- =========================================================
+             ALERT: aviso visual (warning = âmbar)
+             alert-dismissible + btn-close = pode ser fechado pelo usuário
+             ========================================================= -->
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Atenção:</strong> 2 máquinas em manutenção e 1 parada.
+            Acompanhe a tabela de indicadores abaixo.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fechar"></button>
+        </div>
+
+        <!-- =========================================================
+             CARDS DE MÁQUINA
+             col-md-6 col-xl-3 = 2 por linha no tablet, 4 no desktop
+             text-bg-success = ativa (verde) | warning = manutenção
+             danger = parada (vermelho)
+             ========================================================= -->
+        <section class="mb-4">
+            <h2 class="h4 mb-3">Status das Máquinas</h2>
+
+            <div class="row g-3">
+
+                <div class="col-md-6 col-xl-3">
+                    <div class="card text-bg-success h-100">
+                        <div class="card-body text-center">
+                            <h3 class="h6">Prensa Hidráulica P-01</h3>
+                            <p class="display-6 fw-bold mb-1">92%</p>
+                            <p class="small mb-2">OEE</p>
+                            <span class="badge bg-light text-dark">Ativa</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-3">
+                    <div class="card text-bg-warning h-100">
+                        <div class="card-body text-center">
+                            <h3 class="h6">Torno CNC T-02</h3>
+                            <p class="display-6 fw-bold mb-1">71%</p>
+                            <p class="small mb-2">OEE</p>
+                            <span class="badge bg-light text-dark">Em manutenção</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-3">
+                    <div class="card text-bg-danger h-100">
+                        <div class="card-body text-center">
+                            <h3 class="h6">Esteira E-03</h3>
+                            <p class="display-6 fw-bold mb-1">0%</p>
+                            <p class="small mb-2">OEE</p>
+                            <span class="badge bg-light text-dark">Parada</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-3">
+                    <div class="card text-bg-success h-100">
+                        <div class="card-body text-center">
+                            <h3 class="h6">Robô de Solda R-04</h3>
+                            <p class="display-6 fw-bold mb-1">88%</p>
+                            <p class="small mb-2">OEE</p>
+                            <span class="badge bg-light text-dark">Ativa</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- =========================================================
+             TABELA DE INDICADORES
+             table-responsive no PAI | table-striped + table-hover
+             thead class="table-dark" | badges de status nas linhas
+             ========================================================= -->
+        <section class="bg-white p-3 rounded shadow-sm mb-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h2 class="h5 mb-0">Tela de Consultas - Indicadores das Máquinas</h2>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDetalhes">
+                    Ver detalhes da máquina
+                </button>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-striped table-hover align-middle">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Máquina</th>
+                            <th>Planta</th>
+                            <th>OEE</th>
+                            <th>Disponibilidade</th>
+                            <th>Produção</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="fw-semibold">Prensa Hidráulica P-01</td>
+                            <td>Planta A - Usinagem</td>
+                            <td>92%</td>
+                            <td>97%</td>
+                            <td>45 un/h</td>
+                            <td><span class="badge text-bg-success">Ativa</span></td>
+                        </tr>
+                        <tr>
+                            <td class="fw-semibold">Torno CNC T-02</td>
+                            <td>Planta A - Usinagem</td>
+                            <td>71%</td>
+                            <td>82%</td>
+                            <td>30 un/h</td>
+                            <td><span class="badge text-bg-warning">Em manutenção</span></td>
+                        </tr>
+                        <tr>
+                            <td class="fw-semibold">Esteira E-03</td>
+                            <td>Planta B - Montagem</td>
+                            <td>0%</td>
+                            <td>0%</td>
+                            <td>0 un/h</td>
+                            <td><span class="badge text-bg-danger">Parada</span></td>
+                        </tr>
+                        <tr>
+                            <td class="fw-semibold">Robô de Solda R-04</td>
+                            <td>Planta B - Montagem</td>
+                            <td>88%</td>
+                            <td>95%</td>
+                            <td>60 un/h</td>
+                            <td><span class="badge text-bg-success">Ativa</span></td>
+                        </tr>
+                        <tr>
+                            <td class="fw-semibold">Injeteira I-05</td>
+                            <td>Planta C - Estamparia</td>
+                            <td>79%</td>
+                            <td>90%</td>
+                            <td>25 un/h</td>
+                            <td><span class="badge text-bg-success">Ativa</span></td>
+                        </tr>
+                        <tr>
+                            <td class="fw-semibold">Compressor C-06</td>
+                            <td>Planta C - Estamparia</td>
+                            <td>64%</td>
+                            <td>85%</td>
+                            <td>0 un/h</td>
+                            <td><span class="badge text-bg-warning">Em manutenção</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- =========================================================
+             FORMULÁRIO DE FILTRO (sem interação ainda!)
+             form-select para os selects + botões do Bootstrap
+             As Aulas 7/14 vão dar vida a este formulário (React)
+             ========================================================= -->
+        <section class="bg-white p-3 rounded shadow-sm mb-4">
+            <h2 class="h5 mb-3">Filtrar Consultas</h2>
+
+            <form class="row g-3 align-items-end" action="#">
+
+                <div class="col-md-4">
+                    <label for="planta" class="form-label">Planta</label>
+                    <select id="planta" name="planta" class="form-select">
+                        <option value="">Todas as plantas</option>
+                        <option value="a">Planta A - Usinagem</option>
+                        <option value="b">Planta B - Montagem</option>
+                        <option value="c">Planta C - Estamparia</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="status" class="form-label">Status</label>
+                    <select id="status" name="status" class="form-select">
+                        <option value="">Todos os status</option>
+                        <option value="ativa">Ativa</option>
+                        <option value="manutencao">Em manutenção</option>
+                        <option value="parada">Parada</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4">
+                    <button type="submit" class="btn btn-primary">Filtrar</button>
+                    <button type="reset" class="btn btn-outline-secondary">Limpar</button>
+                </div>
+
+            </form>
+        </section>
+
+        <footer class="text-center text-secondary small py-3">
+            Factory Insight - Projeto Integrador ADS 2026.2
+        </footer>
+
+    </div>
+
+    <!-- =========================================================
+         MODAL: janela de detalhes (abre pelo botão acima)
+         data-bs-toggle="modal" + data-bs-target="#modalDetalhes"
+         Estrutura: modal-dialog > modal-content > header/body/footer
+         ========================================================= -->
+    <div class="modal fade" id="modalDetalhes" tabindex="-1" aria-labelledby="tituloModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="tituloModal">Detalhes da Máquina</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+
+                <div class="modal-body">
+                    <p class="fw-bold mb-1">Prensa Hidráulica P-01</p>
+                    <ul class="mb-0">
+                        <li><strong>Planta:</strong> A - Usinagem</li>
+                        <li><strong>OEE:</strong> 92%</li>
+                        <li><strong>Disponibilidade:</strong> 97%</li>
+                        <li><strong>Produção:</strong> 45 un/h</li>
+                        <li><strong>Status:</strong> <span class="badge text-bg-success">Ativa</span></li>
+                    </ul>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Salvar alterações</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- O JavaScript do Bootstrap: necessário para navbar, alert e modal -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
