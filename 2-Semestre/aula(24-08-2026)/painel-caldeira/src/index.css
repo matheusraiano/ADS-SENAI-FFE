@@ -1,0 +1,91 @@
+/* Gabarito — estilo do Painel da Caldeira (tema industrial escuro) */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.painel {
+  width: 440px;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.painel-cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 22px;
+  border-bottom: 1px solid #334155;
+  background: rgba(13, 110, 253, 0.13);
+}
+
+.painel-cabecalho h1 {
+  font-size: 19px;
+  color: #93c5fd;
+}
+
+.badge {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: #198754;
+  color: #fff;
+}
+
+.painel-corpo {
+  padding: 24px;
+  text-align: center;
+}
+
+.sensor-tag {
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #94a3b8;
+  margin-bottom: 6px;
+}
+
+.leitura-valor {
+  font-size: 76px;
+  font-weight: bold;
+  color: #f97316;
+  line-height: 1.05;
+}
+
+.leitura-unidade {
+  font-size: 28px;
+  color: #94a3b8;
+  margin-left: 4px;
+}
+
+.leitura-secundaria {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #cbd5e1;
+}
+
+.painel-rodape {
+  padding: 12px 22px;
+  border-top: 1px solid #334155;
+  text-align: center;
+}
+
+.painel-rodape small {
+  color: #64748b;
+  font-size: 12px;
+}
