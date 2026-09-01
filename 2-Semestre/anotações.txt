@@ -1138,5 +1138,72 @@ Aula(17-08-2026):
             </div>
 
         </div>
-Aula(24-08-2026):
-    
+Aula(31-08-2026):
+    aula sobre componentes no react
+    exemplo de componente com uso de props normal:
+        // Componente Filho que recebe as props 'nome' e 'cargo'
+        function CartaoPerfil(props) {
+            return (
+                <div style={{ border: '1px solid #ccc', padding: '10px', margin: '5px' }}>
+                <h3>{props.nome}</h3>
+                <p>Cargo: {props.cargo}</p>
+                </div>
+            );
+        }
+
+        // Componente Pai que passa os dados via props
+        function App() {
+            return (
+                <div>
+                <CartaoPerfil nome="Ana Souza" cargo="Desenvolvedora" />
+                <CartaoPerfil nome="Carlos Lima" cargo="Designer" />
+                </div>
+            );
+        }
+    exemplo de componente com uso de props com destructuring:
+        // Componente Filho que recebe as props 'nome' e 'cargo' de forma mais "limpa"
+        function CartaoPerfil({nome, cargo}) {
+            return (
+                <div style={{ border: '1px solid #ccc', padding: '10px', margin: '5px' }}>
+                <h3>{nome}</h3>
+                <p>Cargo: {cargo}</p>
+                </div>
+            );
+        }
+
+        // Componente Pai que passa os dados via props
+        function App() {
+            return (
+                <div>
+                <CartaoPerfil nome="Ana Souza" cargo="Desenvolvedora" />
+                <CartaoPerfil nome="Carlos Lima" cargo="Designer" />
+                </div>
+            );
+        }
+    exemplo de usar map() junto com um componente que usa props com react:
+        // Componente Filho que recebe as props 'nome' e 'cargo'
+        function CartaoPerfil(props) {
+            return (
+                <div style={{ border: '1px solid #ccc', padding: '10px', margin: '5px' }}>
+                <h3>{props.nome}</h3>
+                <p>Cargo: {props.cargo}</p>
+                </div>
+            );
+        }
+
+        // Componente Pai que passa os dados via props
+        const func = [
+            { id: 1, nome: 'Ana Souza', cargo: 'Desenvolvedora' },
+            { id: 2, nome: 'Carlos Lima', cargo: 'Designer' }
+        ];
+
+        function App() {
+            return (
+                <div>
+                    <h2>Meus Funcionarios</h2>
+                    {func.map((funcs) => (
+                    <CartaoPerfil key={funcs.id} nome={funcs.nome} cargo={funcs.cargo} />
+                    ))}
+                </div>
+            );
+        }
