@@ -1,0 +1,23 @@
+{
+  "maquinas": [
+    { "id": 1, "nome": "Prensa Hidráulica P-01", "planta": "Planta A", "oee": 92 },
+    { "id": 2, "nome": "Torno CNC T-02", "planta": "Planta A", "oee": 71 },
+    { "id": 3, "nome": "Esteira E-03", "planta": "Planta B", "oee": 64 },
+    { "id": 4, "nome": "Caldeira C-04", "planta": "Planta B", "oee": 88 },
+    { "id": 5, "nome": "Robô de Solda R-05", "planta": "Planta C", "oee": 58 },
+    { "id": 6, "nome": "Empacotadora P-06", "planta": "Planta C", "oee": 79 }
+  ],
+  "indicadores": [
+    { "id": 1, "rotulo": "OEE médio", "valor": "75%" },
+    { "id": 2, "rotulo": "Máquinas ativas", "valor": "6" },
+    { "id": 3, "rotulo": "Alertas", "valor": "2" }
+  ],
+  "producao": [
+    { "id": 1, "dia": "Seg", "unidades": 420 },
+    { "id": 2, "dia": "Ter", "unidades": 465 },
+    { "id": 3, "dia": "Qua", "unidades": 438 },
+    { "id": 4, "dia": "Qui", "unidades": 510 },
+    { "id": 5, "dia": "Sex", "unidades": 492 },
+    { "id": 6, "dia": "Sáb", "unidades": 350 }
+  ]
+}
